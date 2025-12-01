@@ -13,6 +13,7 @@ dist
 dist-ssr
 coverage
 *.local
+tailwind.config.js
 
 # Editor directories and files
 .vscode/*
