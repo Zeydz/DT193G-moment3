@@ -21,7 +21,7 @@ const isActive = (path) => route.path === path
 
 <!-- Navigationen -->
 <template>
-    <nav class="z-50 bg-slate-950 text-white border-b border-slate-700">
+    <nav class="relative z-50 bg-slate-950 text-white border-b border-slate-700">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
                 <!-- Titel / Logoty -->
