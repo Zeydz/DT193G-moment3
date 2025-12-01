@@ -5,14 +5,14 @@ import Tracks from '@/views/Tracks.vue'
 
 // Route definitions
 const routes = [
-  { path: '/', component: Home },
-  { path: '/about', component: About },
-  { path: '/tracks', component: Tracks }
+  { path: '/', name: 'Hem', component: Home },
+  { path: '/info', name: 'Låtar', component: About },
+  { path: '/tracks', name: 'Info', component: Tracks }
 ]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [],
+  routes,
 })
 
 export default router
