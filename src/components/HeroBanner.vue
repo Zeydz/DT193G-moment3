@@ -11,7 +11,7 @@ import HeroButtons from './UI/HeroButtons.vue';
 
     <!-- Text overlayen -->
     <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
-        <h1 class="text-6xl font-bold mb-4">Välkommen till <span class="text-cyan-500 drop-shadow-[0_0_10px_rgba(0,255,255,0.7)]">MusikLista!</span></h1>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-center">Välkommen till <span class="text-cyan-500 drop-shadow-[0_0_10px_rgba(0,255,255,0.7)]">MusikLista!</span></h1>
         <p class="text-lg">Utforska och hantera dina favoritlåtar!</p>
         <HeroButtons />
     </div>
