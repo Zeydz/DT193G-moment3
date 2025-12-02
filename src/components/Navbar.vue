@@ -6,7 +6,7 @@ import { useRoute } from 'vue-router'
 const navLinks = [
     { path: '/', label: 'Hem' },
     { path: '/tracks', label: 'Låtar' },
-    { path: '/about', label: 'Om' },
+    { path: '/info', label: 'Info' },
 ]
 
 // Reaktiv variabel för mobilmenyn
@@ -45,15 +45,16 @@ const isActive = (path) => route.path === path
                 </div>
 
                 <!-- Hamburgareikon för mobiler -->
-                <button class="md:hidden w-10 h-10 rounded-xl hover:bg-gray-700 transition-colors bg-slate-800/80 border border-cyan-500"
+                <button
+                    class="md:hidden w-10 h-10 rounded-xl hover:bg-gray-700 transition-colors bg-slate-800/80 border border-cyan-500"
                     @click="isMenuOpen = !isMenuOpen">
-                    <component :is="isMenuOpen ? XIcon : MenuIcon" class="w-5 h-5 text-white" />
-                      <i :class="isMenuOpen ? 'pi pi-times text-cyan-500' : 'pi pi-bars text-cyan-500'"></i>
+                    <i :class="isMenuOpen ? 'pi pi-times text-cyan-500' : 'pi pi-bars text-cyan-500'"></i>
                 </button>
             </div>
 
             <!-- Navigation för mobiler -->
-            <div class="md:hidden overflow-hidden transition-all duration-700 " :class="isMenuOpen ? 'max-h-48 pb-4' : 'max-h-0'">
+            <div class="md:hidden overflow-hidden transition-all duration-700 "
+                :class="isMenuOpen ? 'max-h-48 pb-4' : 'max-h-0'">
                 <div class="flex flex-col gap-2 mt-2 justify-center items-center">
                     <router-link v-for="link in navLinks" :key="link.path" :to="link.path" @click="isMenuOpen = false">
                         <button :class="[

@@ -14,7 +14,7 @@
         </router-link>
 
         <!-- Högerknappen -->
-        <router-link to="/about">
+        <router-link to="/info">
             <button
                 class="px-6 py-3 text-cyan-500 border border-cyan-500/30 rounded-xl hover:bg-slate-800/50 transition-colors">
                 Läs mer om projektet
