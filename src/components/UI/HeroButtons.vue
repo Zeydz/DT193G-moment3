@@ -3,7 +3,7 @@
 
 <!-- Knappar på hero-bilden -->
 <template>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-6">
         <!-- Vänsterknappen -->
         <router-link to="/tracks">
             <button
